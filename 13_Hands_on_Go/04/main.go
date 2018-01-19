@@ -9,6 +9,5 @@ func main() {
 	fmt.Scan(&largenum)
 	fmt.Println("Enter small num: ")
 	fmt.Scan(&smallnum)
-	var remainder int = largenum % smallnum
-	fmt.Printf("%v divided by %v gives the remainder of %v", largenum, smallnum, remainder)
+	fmt.Printf("%v divided by %v gives the remainder of %v", largenum, smallnum, largenum%smallnum)
 }
