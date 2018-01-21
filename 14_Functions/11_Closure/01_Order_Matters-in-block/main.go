@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	x := 42
+	x := 42 // Order matters in block!
 	fmt.Println(x)
 	{
 		fmt.Println(x)

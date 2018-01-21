@@ -4,6 +4,7 @@ import "fmt"
 
 func wrapper() func() int {
 	var x int
+	fmt.Println(&x) // 0xc04200e080
 	return func() int {
 		x++
 		return x
@@ -11,9 +12,10 @@ func wrapper() func() int {
 }
 
 func main() {
-	increment := wrapper()
-	fmt.Println(increment())
-	fmt.Println(increment())
+	x := wrapper()
+	fmt.Println(x())
+	fmt.Println(x())
+	fmt.Print(&x) // 0xc042004028
 }
 
 /*
