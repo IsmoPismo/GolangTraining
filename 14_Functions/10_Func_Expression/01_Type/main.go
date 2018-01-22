@@ -8,6 +8,6 @@ func main() {
 		fmt.Println("Hello world!")
 	}
 
-	greeting() // func expresion? Only when assigning to a variable?
+	greeting()
 	fmt.Printf("%T\n", greeting)
 }
