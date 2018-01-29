@@ -6,9 +6,9 @@ import (
 )
 
 type person struct {
-	First       string
-	Last        string
-	Age         int
+	first       string // None of these will be exported
+	last        string
+	age         int
 	notExported int
 }
 
