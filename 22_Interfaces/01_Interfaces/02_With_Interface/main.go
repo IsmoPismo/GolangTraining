@@ -21,6 +21,5 @@ func info(z Shape) {
 
 func main() {
 	s := Square{side: 10.55}
-	fmt.Println("Area of Square with side", s.side, "is", s.area())
 	info(s)
 }

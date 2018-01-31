@@ -45,5 +45,4 @@ func main() {
 	t := circle{radius: 0.73}
 	info(t)
 	fmt.Println(totalArea(s, t))
-
 }
