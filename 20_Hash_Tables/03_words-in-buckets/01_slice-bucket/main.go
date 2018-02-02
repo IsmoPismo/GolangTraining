@@ -19,6 +19,7 @@ func main() {
 	defer res.Body.Close()
 	// Set the split function for the scanning operation.
 	scanner.Split(bufio.ScanWords)
+	fmt.Printf("%T\n", scanner) // *bufio.Scanner
 	// Create slice of slice of string to hold slices of words
 	buckets := make([][]string, 12)
 
@@ -37,13 +38,13 @@ func main() {
 	}
 
 	// Print all buckets
-	for i := 0; i < 12; i++ {
-		fmt.Println("Bucket", i)
-		fmt.Println(buckets[i])
-	}
-
-	fmt.Println(len(buckets))
-	fmt.Println(cap(buckets))
+	// 	for i := 0; i < 12; i++ {
+	// 		fmt.Println("Bucket", i)
+	// 		fmt.Println(buckets[i])
+	// 	}
+	//
+	// 	fmt.Println(len(buckets))
+	// 	fmt.Println(cap(buckets))
 }
 
 func hashBucket(word string, buckets int) int {
