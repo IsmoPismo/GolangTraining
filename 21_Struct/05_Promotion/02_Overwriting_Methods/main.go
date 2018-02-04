@@ -4,30 +4,30 @@ import (
 	"fmt"
 )
 
-type Person struct {
+type person struct {
 	Name string
 }
 
-type DoubleOhSeven struct {
-	Person
+type doubleOhSeven struct {
+	person
 	LicenseToMurder bool
 }
 
-func (p Person) Greeting() {
+func (p person) Greeting() {
 	fmt.Println("I'm a regular guy...")
 }
 
-func (a DoubleOhSeven) Greeting() {
+func (a doubleOhSeven) Greeting() {
 	fmt.Println("Bond...\tJames Bond")
 }
 
 func main() {
-	p1 := Person{
+	p1 := person{
 		Name: "Johny",
 	}
 
-	p2 := DoubleOhSeven{
-		Person: Person{
+	p2 := doubleOhSeven{
+		person: person{
 			Name: "James Bond",
 		},
 		LicenseToMurder: true,
@@ -35,5 +35,5 @@ func main() {
 
 	p1.Greeting()
 	p2.Greeting()
-	p2.Person.Greeting()
+	p2.person.Greeting()
 }

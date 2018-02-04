@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Square is a Shape with four equal straight sides and four right angles
 type Square struct {
 	side float64
 }

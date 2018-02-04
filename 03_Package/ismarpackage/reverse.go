@@ -1,4 +1,4 @@
-// Package stringutil contains utility functions for working with strings.
+// Package ismarpackage contains utility functions for working with strings.
 package ismarpackage
 
 // Reverse returns its argument string reversed rune-wise left to right.

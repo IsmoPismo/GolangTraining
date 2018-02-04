@@ -10,22 +10,6 @@ type person struct {
 	Age  int
 }
 
-func (p person) String() string {
-	return fmt.Sprintf("YAYAYA %s: %d", p.Name, p.Age)
-}
-
-package main
-
-import (
-	"fmt"
-	"sort"
-)
-
-type person struct {
-	Name string
-	Age  int
-}
-
 //Special Function that prints everytime a string prints
 func (p person) String() string {
 	return fmt.Sprintf("YAYAYA %s: %d", p.Name, p.Age)

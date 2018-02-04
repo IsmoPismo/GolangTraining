@@ -12,7 +12,6 @@ func main() {
 func half(num int) (int, bool) {
 	if num%2 == 0 {
 		return num / 2, true
-	} else {
-		return num / 2, false
 	}
+	return num / 2, false
 }

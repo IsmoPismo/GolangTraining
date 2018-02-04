@@ -4,21 +4,21 @@ import (
 	"fmt"
 )
 
-type Person struct {
+type person struct {
 	First string
 	Last  string
 	Age   int
 }
 
 type ououseven struct {
-	Person
+	person
 	First           string
 	LicenseToMurder bool
 }
 
 func main() {
 	p1 := ououseven{
-		Person: Person{
+		person: person{
 			First: "Johny",
 			Last:  "Knoxwill",
 			Age:   23,
