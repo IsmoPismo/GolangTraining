@@ -23,6 +23,7 @@ func incrementor(s string) {
 	for i := 0; i < 20; i++ {
 		time.Sleep(time.Duration(rand.Intn(22)) * time.Millisecond)
 		atomic.AddInt64(&counter, 1)
-		fmt.Println()
+		fmt.Println(s, i, " - Counter - ", atomic.LoadInt64(&counter)) // access without race
 	}
+	wg.Done()
 }
